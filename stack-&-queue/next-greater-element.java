@@ -76,6 +76,7 @@ public static void main(String[] args) throws Exception {
  */
  public static int[] calculateMaxSlidingWindow(int[] arr, int window_size){
      
+     //Get next greater element to the right (for each elements of the array)
      int[] ngeR = getNgeR(arr);
      
      int[] result = new int[arr.length - window_size+1];
